@@ -4,14 +4,17 @@ function run() {
     const output = document.getElementById("output");
     let out = "";
 /**/
-let isArr=JSON.parse(input);
-if(Array.isArray(isArr)){
-    out='is array';
-}
-else {
-    out='is not array';
-}
-
+    function checkArr(num)
+    {
+        let isArr=JSON.parse(num);
+        if(Array.isArray(isArr)){
+            return 'is array';
+        }
+        else {
+            return 'is not array';
+        }
+    }
 /**/
+    out=checkArr(input);
     output.innerText = out;
 }
