@@ -3,8 +3,8 @@ function run() {
     const output = document.getElementById("output");
     let out = "";
 /**/
-    // write your code here
-    // out = input + 5;
+arr.push(input);
+out=arr;
 
 /**/
     output.innerText = out;
